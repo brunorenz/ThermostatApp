@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">ThermostatManager</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Arduino Thermostat Manager</string>
+    <string name="nav_header_subtitle">renzoni.bruno@gmail.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="TermServerURLL">http://10.0.2.2:8100</string>
+    <string name="TermServerURLL1">http://srvvs23.bpbari.it:8100/WS/therm</string>
+    <string name="TermServerURL">https://65bruno.ddns.net/WS/therm</string>
+    <string name="GETCONF">/rest/readDB?coll=conf</string>
+    <string name="GETDATA">/rest/getCurrentData</string>
+</resources>

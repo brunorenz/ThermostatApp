@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <!--TEMPERATURE -->
+    <TextView
+        android:id="@+id/textViewTemp"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:text="99"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/textViewTempG"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/textViewTemp"
+        android:layout_toEndOf="@+id/textViewTemp"
+        android:text="°"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/textViewTempDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTempG"
+        android:layout_toEndOf="@+id/textViewTemp"
+        android:text=".5"
+        android:textSize="20dp" />
+
+    <ImageView
+        android:id="@+id/imageTemp"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/textViewTemp"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="60dp"
+        app:srcCompat="@drawable/ic_thermometer" />
+
+
+    <TextView
+        android:id="@+id/textViewHumidity"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:text="99"
+        android:textSize="80dp" />
+
+    <TextView
+        android:id="@+id/textViewHumidityPerc"
+        android:layout_width="30dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@+id/textViewHumidity"
+        android:layout_toEndOf="@+id/textViewHumidity"
+        android:text="%"
+        android:textSize="30dp" />
+
+    <TextView
+        android:id="@+id/textViewHumidityDec"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/textViewHumidity"
+        android:layout_toEndOf="@+id/textViewTemp"
+        android:text=".5"
+        android:textSize="20dp" />
+
+
+    <ImageView
+        android:id="@+id/imageHumidity"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignBottom="@+id/textViewHumidity"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginStart="60dp"
+        app:srcCompat="@drawable/ic_water_percent" />
+    <!--
+        <ImageButton
+            android:id="@+id/refreshData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/imageTemp"
+            android:layout_marginBottom="28dp"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/ic_rotate" />
+    -->
+    <!--
+    <ImageView
+        android:id="@+id/imagePressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="160dp"
+        android:layout_marginStart="26dp"
+        app:srcCompat="@drawable/ic_pressure" />
+
+    <TextView
+        android:id="@+id/textPressure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imagePressure"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@id/imagePressure"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageLigth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="130dp"
+        android:layout_marginStart="26dp"
+        app:srcCompat="@drawable/ic_light" />
+
+    <TextView
+        android:id="@+id/textLight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textPressure"
+        android:layout_alignTop="@+id/imageLigth"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageDetection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="100dp"
+        android:layout_marginStart="26dp"
+        app:srcCompat="@drawable/ic_magnifying_glass" />
+
+    <TextView
+        android:id="@+id/textDetectionTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/textPressure"
+        android:layout_alignTop="@+id/imageDetection"
+        android:layout_centerHorizontal="true"
+        android:text="TextView" />
+-->
+    <include
+        android:id="@+id/pp"
+        layout="@layout/content_main_info"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="129dp" />
+
+    <include
+        layout="@layout/content_main_action"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignTop="@+id/pp"
+        android:layout_marginTop="105dp"
+        android:layout_alignParentStart="true" />
+
+    <!--
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/imageLigth"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="center"
+        android:background="@drawable/layer_border_2">
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/imageStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="70dp"
+        android:layout_marginStart="26dp"
+        app:srcCompat="@drawable/ic_radiator" />
+-->
+</RelativeLayout>
